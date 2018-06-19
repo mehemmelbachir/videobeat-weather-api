@@ -1,0 +1,14 @@
+# Pycharm
+.idea/
+.cache/
+
+# Virtualenv
+env/
+
+# Coverage
+htmlcov/
+
+# Extras
+__pycache__/
+db.sqlite3
+media/

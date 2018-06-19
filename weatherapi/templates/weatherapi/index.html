@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h3>
+        Weather API
+        <small class="text-muted">By Bachir Mehemmel</small>
+    </h3>
+    <hr>
+
+    <p>Get output data at:
+    <a href="http://127.0.0.1:8000/api/weather-list/">http://127.0.0.1:8000/api/weather-list/</a>
+    </p>
+
+    <p>Get output data at:
+    <a href="http://127.0.0.1:8000/api/input-list/">http://127.0.0.1:8000/api/input-list/</a>
+    </p>
+
+    <a href="{% url 'weatherapi:clear-data' %}" class="btn btn-secondary">Clear data... </a>
+
+
+
+
+
+{% endblock %}

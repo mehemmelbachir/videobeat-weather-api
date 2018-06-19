@@ -18,6 +18,13 @@ mysql. OS - linux. Backend - Django. Caching - Redis. Rest frameform: Django Res
 ## Configure and run the project.  
 Follow these steps to run the project.  
 
+### Main topics:
+* [Periodic tasks with django and celery](https://realpython.com/asynchronous-tasks-with-django-and-celery/#periodic-tasks)
+* [Caching in django with Redis](https://realpython.com/caching-in-django-with-redis/).
+* [Django REST framework](http://www.django-rest-framework.org/).
+* [Django and MySQL](https://docs.djangoproject.com/fr/2.0/ref/databases/#mysql-notes)
+* [Read xlsx EXCEL 2010+ files with openpyxl](https://openpyxl.readthedocs.io/en/stable/)
+
 ### Clone the project:
 * Use `git clone 'https://github.com/mehemmelbachir/videobeat-weather-api.git'`
 
@@ -46,4 +53,3 @@ On separated terminals, run the following commands:
 **On Windows 10 to fix errors run with __-P eventlet__.**  
 `celery -A weather worker -l info -P eventlet`.  
 `celery -A weather beat -l info`.  
-To implement scheduled tasks with celery i followed the following tutorial: [Periodic tasks](https://realpython.com/asynchronous-tasks-with-django-and-celery/#periodic-tasks)

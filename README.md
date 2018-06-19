@@ -26,30 +26,53 @@ Follow these steps to run the project.
 * [Read xlsx EXCEL 2010+ files with openpyxl](https://openpyxl.readthedocs.io/en/stable/)
 
 ### Clone the project:
-* Use `git clone 'https://github.com/mehemmelbachir/videobeat-weather-api.git'`
+Clone the project into a local repository:
+
+    git clone 'https://github.com/mehemmelbachir/videobeat-weather-api.git'
 
 ### Create DATABASE:
 * open terminal.
-* Connect to mysql: </br>
-    `mysql -u root -p`.
-* Create a database:</br>
-`CREATE DATABASE weather_db;`
+* Connect to mysql and create a database named weather_db.
+
+      mysql -u root -p
+      CREATE DATABASE weather_db
+
+* Ensure you enter the right values of your MySQL connection into your `settings.py` file:
+
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.mysql',
+                'NAME': '<weather_db>',
+                'USER': '<mysql_username>',
+                'PASSWORD': '<mysql_password>',
+                'HOST': 'localhost',
+                'PORT': '3306'
+            }
+        }
 
 ### Install requirements:
 * open terminal
-* activate virtual env `path\to\project\env\script\activate`.
-* run: `pip install -r requirements.txt`.
+* activate virtualenv  
+ `path\to\project\env\script\activate`.
+* run:
+
+      pip install -r requirements.txt
+
 
 ### Run DJANGO SERVER
 * open terminal
 * Activate virtualenv.</br> `path\to\project\env\script\activate`.
-* Run DJANGO SERVER:</br>
-`python manage.py runserver`.
+* Run DJANGO SERVER:
+
+      python manage.py runserver
 
 ### Run Celery Sheduled tasks:  
 On separated terminals, run the following commands:  
-`celery -A weather worker -l info`.  
-`celery -A weather beat -l info`.  
-**On Windows 10 to fix errors run with __-P eventlet__.**  
-`celery -A weather worker -l info -P eventlet`.  
-`celery -A weather beat -l info`.  
+
+    celery -A weather worker -l info
+    celery -A weather beat -l info
+
+**On Windows 10 to fix errors run with __-P eventlet__.**
+
+    celery -A weather worker -l info -P eventlet
+    celery -A weather beat -l info

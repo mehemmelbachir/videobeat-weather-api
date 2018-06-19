@@ -18,7 +18,7 @@ mysql. OS - linux. Backend - Django. Caching - Redis. Rest frameform: Django Res
 ## Configure and run the project.
 
 ### Clone the project:
-* Use `git clone `
+* Use `git clone 'https://github.com/mehemmelbachir/videobeat-weather-api.git'`
 
 ### Create DATABASE:
 * open terminal.

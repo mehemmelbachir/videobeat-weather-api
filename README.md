@@ -13,9 +13,10 @@ bookkeeped and accessed through REST API as well.
 Requirements: all backend should be written in Python with virtual environment. Database -
 mysql. OS - linux. Backend - Django. Caching - Redis. Rest frameform: Django Rest Framework.
 
+<hr/>  
 
-<hr/>
-## Configure and run the project.
+## Configure and run the project.  
+Follow these steps to run the project.  
 
 ### Clone the project:
 * Use `git clone 'https://github.com/mehemmelbachir/videobeat-weather-api.git'`

@@ -12,7 +12,7 @@ decorator==4.3.0
 Django==2.0.6
 django-cors-headers==1.1.0
 django-redis==4.9.0
-djangorestframework==3.8.2
+djangorestframework==3.9.1
 et-xmlfile==1.0.1
 eventlet==0.23.0
 greenlet==0.4.13
